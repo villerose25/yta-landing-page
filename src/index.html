@@ -1,108 +1,95 @@
 <!Doctype html>
 <html lang="es">
-    <!-- Darle un contexto al encabezado. el usuario no ve esta informacion-->
-    <head>
-        <meta charset="UTF-8" />
-        <title>Bienvenidos a Yo te Adopto!</title>
-        <!-- <link rel = "stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" /> -->
-        <link rel = "stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
-        <style>
-            section {
-                position: relative;
-            }
-
-            img {
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                opacity: 0.1;
-            }
-
-            /* Selector de descendencia*/
-            section div{
-                position: relative;
-                z-index: 1;
-            }
-        </style>
-    </head>
-
-    <body>
-        <section>
-            <h1>Yo te adopto</h1>
-            <p>Hogares para nuestros amigos.</p>
-        </section>
-        <section style="background-color: #f06252;padding: 64px">
-            <div>
-                <picture>
-                    <img
-                    srcset="./images/aboutus-img_1x.png,
-                    ./images/aboutus-img_2x.png 2x,
-                    ./images/aboutus-img3x.png 3x",
-                    src="./images/aboutus-img_1x.png"
-                    alt=""
-                    style="position: relative; opacity:1;"
-                    />
-                </picture>
-                <h2 style="color:#553457; font-size: 28px; text-transform: uppercase; text-align:center">Qué es yo te adopto?</h2>
-                <p style="color:white; margin-top: 15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt ratione voluptates nostrum nemo atque quae at, quisquam cum dolorum explicabo ea assumenda? Amet dolorum, ea in ut vero ducimus.</p>        
-            </div>
-           <img src="./images/paw-print.png" alt="" />
-        </section>
-
-        <section>
-            <h2>Busco un lugar, me adoptas?</h2>
-            <article>
-                <h3>Casimiro</h3>
-                <!-- Una etiqueta que es una palabra a la cual le podemos dar un estilo
-                y hay que ocultarlo. -->
-                <span>Es un perro</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae assumenda voluptates corporis nobis placeat temporibus dolore non quas, adipisci deleniti. Perspiciatis architecto voluptate, sunt molestias harum modi totam nam.</p>
-            </article>
-            <article>
-                <h3>Felipe</h3>
-                <span>Es un gato</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae assumenda voluptates corporis nobis placeat temporibus dolore non quas, adipisci deleniti. Perspiciatis architecto voluptate, sunt molestias harum modi totam nam.</p>
-            </article>
-            <article>
-                <h3>Benito</h3>
-                <span>Es un conejo</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae assumenda voluptates corporis nobis placeat temporibus dolore non quas, adipisci deleniti. Perspiciatis architecto voluptate, sunt molestias harum modi totam nam.</p>
-            </article>
-        </section>
-
-        <section>
-            <h2>Campañas de vacunación</h2>
-            <article>
-                <h3>Antirrabica</h3>
-                <time datetime = "2018-03-10">Sábado 10 de Marzo 2018</time>
-                <address>
-                    Palacio de las Mascotas
-                    <time datetime="08:00">8:00 am</time> &#8212; 
-                    <time datetime="15:00">3:00 pm</time>
-                </address>
-                <span>
-                    Costo: $200
-                    <abbr title="Pesos Mexicanos">MXN</abbr>
-                </span>
-            </article>
-        </section>
-
-        <footer>
-            <nav>
-                <h2>Redes sociales</h2>
-                <ul>
-                    <li>
-                        <a href="www.facebook.com">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#">Instagram</a>
-                    </li>
-                </ul>
-            </nav>
-            Yo Tea Adopto &reg; 2018
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>¡Bienvenidos a Yo Te Adopto!</title>
+    <!--
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    -->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  
+  <body>
+    <section>
+      <h1>Yo Te Adopto</h1>
+      <p>Hogares para nuestros amigos</p>
+    </section>
+    <section class="yta_AboutUs">
+      <div class="yta_AboutUs-container">
+        <div class="yta_AboutUs-container-dog">
+          <picture>
+            <img
+              srcset="./images/aboutus-img_1x.png,
+              ./images/aboutus-img_2x.png 2x,
+              ./images/aboutus-img_3x.png 3x",
+              src="./images/aboutus-img_1x.png"
+              alt=""
+            />
+          </picture>
+          <img class="yta_AboutUs-container-dog-isologo" src="./images/isologo.png" alt="">
+        </div>
+        <h2 class="yta_AboutUs-container-title">¿Qué es Yo Te Adopto?</h2>
+        <p class="yta_AboutUs-container-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil. Dolores veniam reiciendis saepe eius. Aut natus culpa laudantium aliquid, maiores nam, optio accusamus pariatur, aspernatur laborum quisquam ipsa dolores!</p>
+      </div>
+      <img class="yta_AboutUs-pawPrint" src="./images/paw-print.png" alt="" />
+    </section>
+    <section>
+      <h2>Busco un lugar, ¿Me adoptas?</h2>
+      <article>
+        <h3>Casimiro</h3>
+        <span>Es un Perro</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatibus, eius autem sapiente pariatur quos nobis adipisci quo dolor deserunt quia aliquam error praesentium eum odio, dicta harum amet provident.
+        </p>
+      </article>
+      <article>
+        <h3>Felipe</h3>
+        <span>Es un Gato</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatibus, eius autem sapiente pariatur quos nobis adipisci quo dolor deserunt quia aliquam error praesentium eum odio, dicta harum amet provident.
+        </p>
+      </article>
+      <article>
+        <h3>Bennito</h3>
+        <span>Es un Conejo</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatibus, eius autem sapiente pariatur quos nobis adipisci quo dolor deserunt quia aliquam error praesentium eum odio, dicta harum amet provident.
+        </p>
+      </article>
+    </section>
+    <section>
+      <h2>Campañas de vacunación</h2>
+      <article>
+        <h3>Antirrábica</h3>
+        <time datetime="2018-03-10">Sábado 10 de Marzo 2018</time>
+        <address>
+          Palacio de las Mascotas
+          <time datetime="08:00">8:00 am</time> &#8212;
+          <time datetime="15:00">3:00 pm</time>
+        </address>
+        <span>
+          Costo $200
+          <abbr title="Peso Mexicano">MXN</abbr>
+        </span>
+      </article>
+    </section>
+    <footer>
+      <nav>
+        <h2>Redes sociales</h2>
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </nav>
+      Yo te Adopto &reg; 2018
+    </footer>
+  </body>
 </html>

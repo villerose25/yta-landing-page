@@ -1,0 +1,45 @@
+.yta_AboutUs { 
+    position: relative; 
+    background-color: #f06252; 
+    padding: 64px; 
+    text-align: center; 
+    overflow: hidden;
+}
+
+.yta_AboutUs-container {
+    position: relative;
+    z-index: 1;
+}
+
+.yta_AboutUs-container-dog {
+position: relative;
+display: inline-block;
+padding-bottom: 30px;
+margin-bottom: 20px;
+}
+
+.yta_AboutUs-container-dog-isologo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+}
+
+.yta_AboutUs-container-title { 
+color: #553457; 
+font-size: 28px; 
+text-align: center; 
+text-transform: uppercase; 
+}
+
+.yta_AboutUs-container-desc { 
+color: white; 
+margin-top: 15px; 
+} 
+    
+.yta_AboutUs-pawPrint { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    opacity: 0.1; 
+}
