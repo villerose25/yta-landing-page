@@ -6,6 +6,24 @@
         <title>Bienvenidos a Yo te Adopto!</title>
         <!-- <link rel = "stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" /> -->
         <link rel = "stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
+        <style>
+            section {
+                position: relative;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                opacity: 0.1;
+            }
+
+            /* Selector de descendencia*/
+            section div{
+                position: relative;
+                z-index: 1;
+            }
+        </style>
     </head>
 
     <body>
@@ -14,8 +32,11 @@
             <p>Hogares para nuestros amigos.</p>
         </section>
         <section style="background-color: #f06252;padding: 64px">
-            <h2 style="color:#553457; font-size: 28px; text-transform: uppercase; text-align:center">Qué es yo te adopto?</h2>
-            <p style="color:white; margin-top: 15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt ratione voluptates nostrum nemo atque quae at, quisquam cum dolorum explicabo ea assumenda? Amet dolorum, ea in ut vero ducimus.</p>
+            <div>
+                <h2 style="color:#553457; font-size: 28px; text-transform: uppercase; text-align:center">Qué es yo te adopto?</h2>
+                <p style="color:white; margin-top: 15px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt ratione voluptates nostrum nemo atque quae at, quisquam cum dolorum explicabo ea assumenda? Amet dolorum, ea in ut vero ducimus.</p>        
+            </div>
+           <img src="./images/paw-print.png" alt="" />
         </section>
 
         <section>
