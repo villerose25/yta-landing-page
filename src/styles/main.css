@@ -1,3 +1,11 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ffc85e;
+}
 
 .yta_Home {
     height: 600px;
@@ -127,3 +135,26 @@ margin-top: 15px;
     text-transform: uppercase;
 }
 
+footer {
+    background-color: #553457;
+    color: white;
+    text-align: center;
+    padding: 32px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+footer ul li:first-child {
+    margin-left: 0;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+/*footer ul li:nth-child(2x1){
+    background-color: red;
+}*/
