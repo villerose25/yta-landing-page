@@ -95,3 +95,35 @@ margin-top: 15px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
+.yta_Camp {
+    background-color: #f06252;
+    padding: 64px;
+    text-align:center;
+}
+
+.yta_Camp-title {
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #ffc85e;
+}
+
+.yta_Camp-card {
+    color: white;
+}
+
+.yta_Camp-map {
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 32px auto;
+}
+
+.yta_Camp-card h3{
+    font-size: 20;
+    text-transform: uppercase;
+}
+
