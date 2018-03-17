@@ -12,16 +12,21 @@
   </head>
   
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#"><span class="yta_u-onlyRead">Que es yo te adopto?</span>Acerca</a></li>
-        <li><a href="#"><span class="yta_u-onlyRead">Animales en adopción</span>Adoptar</a></li>
-        <li><a href="#">Campañas</a></li>
-        <li><a href="#">Testimonio</a></li>
+    <h1 class="yta_u-onlyRead">¡Bienvenidos a Yo te Adopto!</h1>
+    <nav class="yta_Menu">
+      <h2 class="yta_u-onlyRead">Menu navegacion</h2>
+      <i id="menuIcon" class="yta_menu"></i>
+      <i class="yta_logo"></i>
+      <ul id="menuList" class="yta_Menu-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutUs"><span class="yta_u-onlyRead">Que es yo te adopto?</span>Acerca</a></li>
+        <li><a href="#adopt"><span class="yta_u-onlyRead">Animales en adopción</span>Adoptar</a></li>
+        <li><a href="#camp">Campañas</a></li>
+        <li><a href="#testimony">Testimonio</a></li>
       </ul>
     </nav>
-    <section class="yta_Home">
+    <section id="home" class="yta_Home">
+      <h2 class="yta_u-onlyRead">Home</h2>
       <svg aria-labelledby="home-title home-desc" width="150" height="150">
         <title id="home-title">Yo te adopto</title>
         <desc id="home-desc">Hogares para nuestros amigos</desc>
@@ -34,7 +39,7 @@
       </svg>
       <i class="yta_Home-icon yta_up-down"></i>
     </section>
-    <section class="yta_AboutUs">
+    <section id="aboutUs" class="yta_AboutUs">
       <div class="yta_AboutUs-container">
         <div class="yta_AboutUs-container-dog">
           <picture>
@@ -53,7 +58,7 @@
       </div>
       <img class="yta_AboutUs-pawPrint" src="./images/paw-print.png" alt="" />
     </section>
-    <section class="yta_AdoptMe">
+    <section id="adopt" class="yta_AdoptMe">
       <h2 class="yta_AdoptMe-title">
         <i class="yta_logo"></i>Busco un lugar<br/> ¿Me adoptas?
       </h2>
@@ -73,7 +78,7 @@
       </article>
       <i class="yta_slide"></i>
     </section>
-    <section class="yta_Camp">
+    <section id = "camp" class="yta_Camp">
       <h2 class="yta_Camp-title">Campañas de vacunación</h2>
       <div class="yta_Camp-map"></div>
       <article class="yta_Camp-card">
@@ -107,5 +112,29 @@
       </nav>
       Yo te Adopto &reg; 2018
     </footer>
+
+
+    <script>
+      var menuList = document.getElementById('menuList');
+      var menuIcon = document.getElementById('menuIcon');
+
+      function addIcon() {
+        menuList.classList.toggle('is-opened');
+
+        if(menuList.classList.contains('is-opened')){
+          document.body.style.overflow = 'hidden';
+        }
+        else{
+          document.body.style.overflow = 'auto';
+        }
+      };
+
+      menuIcon.addEventListener('click', addIcon);
+     
+     window.onhashchange = function(){
+       menuIcon.click();
+     };
+
+    </script>
   </body>
 </html>

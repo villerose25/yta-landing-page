@@ -29,6 +29,61 @@ a {
   border: 0 !important;
 }
 
+.yta_Menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+
+.yta_Menu i:last-of-type {
+  font-size: 24px;
+}
+
+.yta_Menu i:first-of-type{
+  cursor: pointer;
+}
+
+
+
+.yta_Menu i {
+  position: relative;
+  z-index: 1;
+}
+
+.yta_Menu-list {
+  position: fixed;
+  background: #553457;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 0;
+  bottom: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.yta_Menu-list.is-opened {
+  bottom: 0;
+  padding-top: 80px;
+  height: 100vh;
+}
+
+.yta_Menu-list li a {
+  display: block;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.yta_Menu-list li a:hover {
+  background: #3d183f;
+}
+
 .yta_Home {
   height: 600px;
   height: 100vh;
@@ -43,12 +98,12 @@ a {
   position: relative;
 }
 
-  .yta_Home-icon {
-    color: white;
-    font-size: 42px;
-    position: absolute;
-    bottom: 42px;
-  }
+.yta_Home-icon {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  bottom: 42px;
+}
 
 .yta_AboutUs { 
   position: relative; 
@@ -57,110 +112,111 @@ a {
   text-align: center;
   overflow: hidden;
 }
-  .yta_AboutUs-container {
-    position: relative;
-    z-index: 1;
-  }
 
-    .yta_AboutUs-container-dog {
-      position: relative;
-      display: inline-block;
-      padding-bottom: 30px;
-      margin-bottom: 20px;
-    }
+.yta_AboutUs-container {
+  position: relative;
+  z-index: 1;
+}
 
-      .yta_AboutUs-container-dog-isologo {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 100px;
-      }
+.yta_AboutUs-container-dog {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
 
-    .yta_AboutUs-container-title { 
-      color: #553457; 
-      font-size: 28px; 
-      text-align: center; 
-      text-transform: uppercase; 
-    }
+.yta_AboutUs-container-dog-isologo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.yta_AboutUs-container-title { 
+  color: #553457; 
+  font-size: 28px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
     
-    .yta_AboutUs-container-desc { 
-      color: white; 
-      margin-top: 15px; 
-    } 
-   
-  .yta_AboutUs-pawPrint { 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    opacity: 0.1; 
-  }
+.yta_AboutUs-container-desc { 
+  color: white; 
+  margin-top: 15px; 
+} 
+  
+.yta_AboutUs-pawPrint { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  opacity: 0.1; 
+}
 
 .yta_AdoptMe {
   background-color: black;
 }
 
-  .yta_AdoptMe-title {
-    background-color: #ffc85e;
-    text-align: center;
-    padding: 32px;
-    text-transform: uppercase;
-    font-size: 28px;
-    color: #553457;
-  }
+.yta_AdoptMe-title {
+  background-color: #ffc85e;
+  text-align: center;
+  padding: 32px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #553457;
+}
 
-  .yta_AdoptMe-title i {
-    color: white;
-    display: block;
-    margin-bottom: 20px;
-    font-size: 42px;
-  }
+.yta_AdoptMe-title i {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 42px;
+}
 
-  .yta_AdoptMe-card {
-    background-color: #553457;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    color: white;
-  }
+.yta_AdoptMe-card {
+  background-color: #553457;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
 
-  .yta_AdoptMe-card-img {
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-  }
+.yta_AdoptMe-card-img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
 
-  .yta_AdoptMe-card-img + div {
-    padding: 30px;
-  }
+.yta_AdoptMe-card-img + div {
+  padding: 30px;
+}
 
-  .yta_AdoptMe-card-img + div i {
-    margin-top: -40px;
-    margin-bottom: 10px;
-    display: block;
-  }
+.yta_AdoptMe-card-img + div i {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  display: block;
+}
 
-  .yta_AdoptMe-card-img + div i:before {
-    padding: 20px;
-    background: #553457;
-    border-radius: 50%;
-    font-size: 32px;
-  }
+.yta_AdoptMe-card-img + div i:before {
+  padding: 20px;
+  background: #553457;
+  border-radius: 50%;
+  font-size: 32px;
+}
 
-  .yta_AdoptMe-card-img + div h3 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
+.yta_AdoptMe-card-img + div h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 
-  .yta_AdoptMe > i {
-    color: white;
-    background-color: #ffc85e;
-    padding: 40px;
-    display: block;
-    font-size: 42px;
-    text-align: center
-  }
+.yta_AdoptMe > i {
+  color: white;
+  background-color: #ffc85e;
+  padding: 40px;
+  display: block;
+  font-size: 42px;
+  text-align: center
+}
 
 .yta_Camp {
   background-color: #f06252;
