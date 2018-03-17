@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'yta';
+  src:  url('./yta.eot?aw0dhi');
+  src:  url('./yta.eot?aw0dhi#iefix') format('embedded-opentype'),
+    url('./yta.ttf?aw0dhi') format('truetype'),
+    url('./yta.woff?aw0dhi') format('woff'),
+    url('./yta.svg?aw0dhi#yta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  font-family: 'yta' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yta_logo:before {
+  content: "\e900";
+}
+.yta_menu:before {
+  content: "\e901";
+}
+.yta_up-down:before {
+  content: "\e902";
+}
+.yta_paw-print:before {
+  content: "\e903";
+}
+.yta_slide:before {
+  content: "\e904";
+}
+.yta_paw-print-plus:before {
+  content: "\e905";
+}
+.yta_jt:before {
+  content: "\e906";
+}
+.yta_koc:before {
+  content: "\e907";
+}
+.yta_qu-close:before {
+  content: "\e908";
+}
+.yta_qu-open:before {
+  content: "\e909";
+}
+.yta_twitter:before {
+  content: "\e90a";
+}
+.yta_instagram:before {
+  content: "\e90b";
+}
+.yta_facebook:before {
+  content: "\e90c";
+}

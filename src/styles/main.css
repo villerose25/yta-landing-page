@@ -1,0 +1,263 @@
+@import './fonts/index.css';
+
+* {
+  font-family: nunito;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-family: maaxRounded;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.yta_u-onlyRead {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1 !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  border: 0 !important;
+}
+
+.yta_Menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+
+.yta_Menu i:last-of-type {
+  font-size: 24px;
+}
+
+.yta_Menu i:first-of-type{
+  cursor: pointer;
+}
+
+
+
+.yta_Menu i {
+  position: relative;
+  z-index: 1;
+}
+
+.yta_Menu-list {
+  position: fixed;
+  background: #553457;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 0;
+  bottom: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.yta_Menu-list.is-opened {
+  bottom: 0;
+  padding-top: 80px;
+  height: 100vh;
+}
+
+.yta_Menu-list li a {
+  display: block;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.yta_Menu-list li a:hover {
+  background: #3d183f;
+}
+
+.yta_Home {
+  height: 600px;
+  height: 100vh;
+  background-color: #ffc85e;
+  background-image: url(../images/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.yta_Home-icon {
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  bottom: 42px;
+}
+
+.yta_AboutUs { 
+  position: relative; 
+  background-color: #f06252; 
+  padding: 64px; 
+  text-align: center;
+  overflow: hidden;
+}
+
+.yta_AboutUs-container {
+  position: relative;
+  z-index: 1;
+}
+
+.yta_AboutUs-container-dog {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.yta_AboutUs-container-dog-isologo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+}
+
+.yta_AboutUs-container-title { 
+  color: #553457; 
+  font-size: 28px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+    
+.yta_AboutUs-container-desc { 
+  color: white; 
+  margin-top: 15px; 
+} 
+  
+.yta_AboutUs-pawPrint { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  opacity: 0.1; 
+}
+
+.yta_AdoptMe {
+  background-color: black;
+}
+
+.yta_AdoptMe-title {
+  background-color: #ffc85e;
+  text-align: center;
+  padding: 32px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #553457;
+}
+
+.yta_AdoptMe-title i {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+
+.yta_AdoptMe-card {
+  background-color: #553457;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+.yta_AdoptMe-card-img {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.yta_AdoptMe-card-img + div {
+  padding: 30px;
+}
+
+.yta_AdoptMe-card-img + div i {
+  margin-top: -40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.yta_AdoptMe-card-img + div i:before {
+  padding: 20px;
+  background: #553457;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.yta_AdoptMe-card-img + div h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.yta_AdoptMe > i {
+  color: white;
+  background-color: #ffc85e;
+  padding: 40px;
+  display: block;
+  font-size: 42px;
+  text-align: center
+}
+
+.yta_Camp {
+  background-color: #f06252;
+  padding: 64px;
+  text-align: center;
+}
+
+.yta_Camp-title {
+  color: #ffc85e;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.yta_Camp-card {
+  color: white;
+}
+
+.yta_Camp-map {
+  background-color: white;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 32px auto;
+}
+
+footer {
+  background-color: #553457;
+  color: white;
+  text-align: center;
+  padding: 32px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
