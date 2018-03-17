@@ -10,7 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@import './yta.css';
 @font-face {  
   font-family: maaxRounded;  
   src:  url('./maax-rounded.eot');  

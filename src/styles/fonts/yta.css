@@ -1,16 +1,28 @@
 @font-face {
   font-family: 'yta';
+<<<<<<< HEAD
   src:  url('./yta.eot?aw0dhi');
   src:  url('./yta.eot?aw0dhi#iefix') format('embedded-opentype'),
     url('./yta.ttf?aw0dhi') format('truetype'),
     url('./yta.woff?aw0dhi') format('woff'),
     url('./yta.svg?aw0dhi#yta') format('svg');
+=======
+  src:  url('fonts/yta.eot?6wcbml');
+  src:  url('fonts/yta.eot?6wcbml#iefix') format('embedded-opentype'),
+    url('fonts/yta.ttf?6wcbml') format('truetype'),
+    url('fonts/yta.woff?6wcbml') format('woff'),
+    url('fonts/yta.svg?6wcbml#yta') format('svg');
+>>>>>>> 8a141c7... add font icons
   font-weight: normal;
   font-style: normal;
 }
 
 i {
+<<<<<<< HEAD
   /* use !important to prevent issues with browser extensions that change . */
+=======
+  /* use !important to prevent issues with browser extensions that change fonts */
+>>>>>>> 8a141c7... add font icons
   font-family: 'yta' !important;
   speak: none;
   font-style: normal;
