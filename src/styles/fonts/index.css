@@ -1,0 +1,34 @@
+@import './yta.css';
+
+@font-face {
+  font-family: nunito;
+  src: url('./nunito-light.eot');
+  src: url('./nunito-light.eot') format('embedded-opentype'),
+    url('./nunito-light.ttf') format('truetype'),
+    url('./nunito-light.woff') format('woff'),
+    url('./nunito-light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {  
+  font-family: maaxRounded;  
+  src:  url('./maax-rounded.eot');  
+  src:  url('./maax-rounded.eot') format('embedded-opentype'),  
+    url('./maax-rounded.ttf') format('truetype'),  
+    url('./maax-rounded.woff') format('woff'),  
+    url('./maax-rounded.svg') format('svg');  
+  font-weight: normal;  
+  font-style: normal;  
+}  
+ 
+@font-face {  
+  font-family: maaxRounded;  
+  src:  url('./maax-rounded-bold.eot');  
+  src:  url('./maax-rounded-bold.eot') format('embedded-opentype'),  
+    url('./maax-rounded-bold.ttf') format('truetype'),  
+    url('./maax-rounded-bold.woff') format('woff'),  
+    url('./maax-rounded-bold.svg') format('svg');  
+  font-weight: bold;  
+  font-style: normal;  
+}
