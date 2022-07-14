@@ -1,0 +1,140 @@
+<!Doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>¡Bienvenidos a Yo Te Adopto!</title>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1" />
+    <!--
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    -->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  
+  <body>
+    <h1 class="yta_u-onlyRead">¡Bienvenidos a Yo te Adopto!</h1>
+    <nav class="yta_Menu">
+      <h2 class="yta_u-onlyRead">Menu navegacion</h2>
+      <i id="menuIcon" class="yta_menu"></i>
+      <i class="yta_logo"></i>
+      <ul id="menuList" class="yta_Menu-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutUs"><span class="yta_u-onlyRead">Que es yo te adopto?</span>Acerca</a></li>
+        <li><a href="#adopt"><span class="yta_u-onlyRead">Animales en adopción</span>Adoptar</a></li>
+        <li><a href="#camp">Campañas</a></li>
+        <li><a href="#testimony">Testimonio</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="yta_Home">
+      <h2 class="yta_u-onlyRead">Home</h2>
+      <svg aria-labelledby="home-title home-desc" width="150" height="150">
+        <title id="home-title">Yo te adopto</title>
+        <desc id="home-desc">Hogares para nuestros amigos</desc>
+        <image
+          xlink:href="./images/isologo.svg"
+          src="./images/isologo.png"
+          width="150"
+          height="150"
+        ></image>
+      </svg>
+      <i class="yta_Home-icon yta_up-down"></i>
+    </section>
+    <section id="aboutUs" class="yta_AboutUs">
+      <div class="yta_AboutUs-container">
+        <div class="yta_AboutUs-container-dog">
+          <picture>
+            <img
+              srcset="./images/aboutus-img_1x.png,
+              ./images/aboutus-img_2x.png 2x,
+              ./images/aboutus-img_3x.png 3x",
+              src="./images/aboutus-img_1x.png"
+              alt=""
+            />
+          </picture>
+          <img class="yta_AboutUs-container-dog-isologo" src="./images/isologo.png" alt="">
+        </div>
+        <h2 class="yta_AboutUs-container-title">¿Qué es Yo Te Adopto?</h2>
+        <p class="yta_AboutUs-container-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil. Dolores veniam reiciendis saepe eius. Aut natus culpa laudantium aliquid, maiores nam, optio accusamus pariatur, aspernatur laborum quisquam ipsa dolores!</p>
+      </div>
+      <img class="yta_AboutUs-pawPrint" src="./images/paw-print.png" alt="" />
+    </section>
+    <section id="adopt" class="yta_AdoptMe">
+      <h2 class="yta_AdoptMe-title">
+        <i class="yta_logo"></i>Busco un lugar<br/> ¿Me adoptas?
+      </h2>
+      <article class="yta_AdoptMe-card">
+        <div
+          class="yta_AdoptMe-card-img"
+          style="background-image: url(./images/dog.jpg)"
+        ></div>
+        <div>
+          <i class="yta_paw-print"></i>
+          <h3>Casimiro</h3>
+          <span class="yta_u-onlyRead">Es un Perro</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatibus, eius autem sapiente pariatur quos nobis adipisci quo dolor deserunt quia aliquam error praesentium eum odio, dicta harum amet provident.
+          </p>
+        </div>
+      </article>
+      <i class="yta_slide"></i>
+    </section>
+    <section id = "camp" class="yta_Camp">
+      <h2 class="yta_Camp-title">Campañas de vacunación</h2>
+      <div class="yta_Camp-map"></div>
+      <article class="yta_Camp-card">
+        <h3>Antirrábica</h3>
+        <time datetime="2018-03-10">Sábado 10 de Marzo 2018</time>
+        <address>
+          Palacio de las Mascotas
+          <time datetime="08:00">8:00 am</time> &#8212;
+          <time datetime="15:00">3:00 pm</time>
+        </address>
+        <span>
+          Costo $200
+          <abbr title="Peso Mexicano">MXN</abbr>
+        </span>
+      </article>
+    </section>
+    <footer>
+      <nav>
+        <h2 class="yta_u-onlyRead">Redes sociales</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="yta_facebook"></i><span class="yta_u-onlyRead">Facebook</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="yta_twitter"></i><span class="yta_u-onlyRead">Twitter</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="yta_instagram"></i><span class="yta_u-onlyRead">Instagram</span></a>
+          </li>
+        </ul>
+      </nav>
+      Yo te Adopto &reg; 2018
+    </footer>
+
+
+    <script>
+      var menuList = document.getElementById('menuList');
+      var menuIcon = document.getElementById('menuIcon');
+
+      function addIcon() {
+        menuList.classList.toggle('is-opened');
+
+        if(menuList.classList.contains('is-opened')){
+          document.body.style.overflow = 'hidden';
+        }
+        else{
+          document.body.style.overflow = 'auto';
+        }
+      };
+
+      menuIcon.addEventListener('click', addIcon);
+     
+     window.onhashchange = function(){
+       menuIcon.click();
+     };
+
+    </script>
+  </body>
+</html>
